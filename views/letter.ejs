@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Legacy Letter</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="container">
+    <h1>Write Your Legacy Letter</h1>
+    <p class="subtext">Behind every line of code is a dream I refuse to let go of.</p>
+
+    <form action="/letter" method="POST">
+      <textarea name="message" rows="10" placeholder="Dear kiddos, every semicolon, every commit — it's all for you."></textarea>
+      <br><br>
+      <button type="submit">Submit Letter</button>
+    </form>
+  </div>
+</body>
+</html>

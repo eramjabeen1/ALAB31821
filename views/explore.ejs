@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Tech Paths</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  
+  <%- include('partials/navbar') %>
+
+  <div class="container">
+    <h1>Explore Tech Career Paths</h1>
+    <p class="subtext">Find a path that aligns with your strengths, goals, and lifestyle.</p>
+
+    <% paths.forEach(path => { %>
+      <div class="career-card">
+        <h2><%= path.title %></h2>
+        <p><%= path.description %></p>
+        <h4>Core Skills:</h4>
+        <ul>
+          <% path.skills.forEach(skill => { %>
+            <li><%= skill %></li>
+          <% }) %>
+        </ul>
+        <a href="<%= path.resource %>" target="_blank">View Learning Resource</a>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>

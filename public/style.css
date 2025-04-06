@@ -1,0 +1,159 @@
+/* base styling for the whole page */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  padding: 2rem;
+  margin: 0;
+}
+
+/* container to center content and keep it neat */
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* big main heading */
+h1 {
+  font-size: 2.5rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+/* soft subheading text */
+.subtext {
+  color: #475569;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* card style for tech career paths */
+.career-card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* heading inside cards */
+h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+/* smaller heading like "core skills" */
+h4 {
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+/* bullet list spacing */
+ul {
+  padding-left: 1.5rem;
+}
+
+/* links in cards and pages */
+a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0ea5e9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* textarea style for the letter form */
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+/* main button style */
+button {
+  background-color: #1e40af;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* output style for submitted legacy letter */
+.letter-output {
+  white-space: pre-line;
+  background: #fefce8;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 6px solid #eab308;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* styling the starter pack checklist */
+.starter-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+/* checklist items with soft animation */
+.starter-list li {
+  background: #fefce8;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #facc15;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+/* delay for each checklist item to appear one by one */
+.starter-list li:nth-child(1) { animation-delay: 0.2s; }
+.starter-list li:nth-child(2) { animation-delay: 0.4s; }
+.starter-list li:nth-child(3) { animation-delay: 0.6s; }
+.starter-list li:nth-child(4) { animation-delay: 0.8s; }
+.starter-list li:nth-child(5) { animation-delay: 1s; }
+.starter-list li:nth-child(6) { animation-delay: 1.2s; }
+
+/* animation keyframe for checklist fade in */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* navbar styles */
+nav {
+  background: #1e40af;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* links inside the navbar */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
