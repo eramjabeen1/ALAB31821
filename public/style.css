@@ -157,3 +157,51 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+/* download button for money picture */
+.download-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #1e40af;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.download-button:hover {
+  background-color: #1d4ed8;
+}
+
+.fade-in-image {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* styles for the download button */
+.download-button {
+  display: inline-block; 
+  background-color: #1e40af; 
+  color: white; 
+  padding: 0.5rem 1rem; 
+  text-decoration: none; 
+  border-radius: 6px;
+  margin-top: 1rem; 
+}
+
+/* styles when user hovers over the button */
+.download-button:hover {
+  background-color: #1d4ed8; 
+}
