@@ -26,6 +26,8 @@ app.get('/', (req, res) => {
 app.get('/about/:name', (req, res) => {
   const name = req.params.name;
   res.render('about', { name });
+
+
 });
 
 // handling form submission from /submit
@@ -36,9 +38,10 @@ app.post('/submit', (req, res) => {
 
 // route for downloading an image file
 app.get('/download', (req, res) => {
-  const file = path.join(__dirname, 'public', 'example.jpg');
+  const file = path.join(__dirname, 'public', 'money.jpg'); // fixed the file name
   res.download(file);
 });
+
 
 // list of tech career paths for the explore page
 const techPaths = [

@@ -205,3 +205,72 @@ nav a:hover {
 .download-button:hover {
   background-color: #1d4ed8; 
 }
+
+.fade-in-image {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/*  centering money image */
+
+.container {
+  text-align: center;
+}
+
+.fade-in-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem; /*  adding space under the image */
+}
+
+/* soft shadow for money image */
+
+.fade-in-image {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.about-link {
+  display: inline-block;
+  margin-top: 1rem; /* adds space below the heading */
+  margin-bottom: 0.75rem; /* optional breathing room above form */
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+.about-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #0284c7;
+}
+.about-link:hover {
+  text-decoration: underline;
+}

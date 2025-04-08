@@ -11,16 +11,22 @@
   <%- include('partials/navbar') %>
 
   <div class="container">
-    <h1>Home Page</h1>
+    <h1 class="page-title">Welcome to your CEO dashboard</h1>
 
-    <a href="/about/Student">Go to About Page</a>
+    <!-- about link styled and spaced out -->
+    <a href="/about/Legacy%20Builder" class="about-link" style="display: inline-block; margin-bottom: 1rem;">Check me out</a>
 
+    <!-- simple form -->
     <form action="/submit" method="POST">
-      <input type="text" name="message" placeholder="Enter something" />
+      <input type="text" name="message" placeholder="What's on your CEO mind?" />
       <button type="submit">Submit</button>
     </form>
 
-    <a href="/download">Download Image</a>
+    <!-- animated image -->
+    <img src="/money.jpg" alt="Money Motivation" class="fade-in-image" />
+
+    <!-- download button -->
+    <a href="/money.jpg" download class="download-button">Download Image</a>
   </div>
 
 </body>
