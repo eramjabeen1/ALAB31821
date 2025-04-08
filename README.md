@@ -67,9 +67,18 @@ Sharing this part of myself is a reminder that our journeys matter. This app isn
 4. Visit  
    `http://localhost:3000`
 
+
 ## Screenshots
 
-will add screenshots
+![image](https://github.com/user-attachments/assets/0df398af-cf22-4c54-b229-7b2af8f6cc0c)
+![image](https://github.com/user-attachments/assets/1b8bddd9-cb70-467e-b900-f13edd1734c2)
+![image](https://github.com/user-attachments/assets/a38dfc8c-6bfa-4042-8a2a-b53823ff00a6)
+![image](https://github.com/user-attachments/assets/f817c1cf-5a33-4a20-9d47-c5365b6a325b)
+![image](https://github.com/user-attachments/assets/e6e953d8-a064-49ed-9836-55cfec097c5e)
+
+
+
+
 
 
 ## Future Features & Portfolio Vision
